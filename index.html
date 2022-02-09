@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://img.icons8.com/external-itim2101-blue-itim2101/64/000000/external-space-space-and-galaxy-itim2101-blue-itim2101.png" type="image/png"/>
+  <title>Spacestagram</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" type="text/css" href="./static/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container py-5">
+    <header>
+      <h1>Spacestagram</h1>
+      <p><a class="btn btn-primary" role="button" onclick=getData() >Get New Images</a></p>
+    </header>
+    
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <div class="row py-5">
+
+          <div class="col-lg-4">
+            <figure id="img0" class="rounded p-3 bg-white shadow-sm">
+              <!-- Image 1 Here -->
+            </figure> 
+          </div>
+          <div class="col-lg-4">
+            <figure id='img1' class="rounded p-3 bg-white shadow-sm">
+              <!-- Image 2 Here -->
+            </figure>
+          </div>
+          <div class="col-lg-4">
+            <figure id='img2' class="rounded p-3 bg-white shadow-sm">
+              <!-- Image 3 Here -->
+            </figure>
+          </div>
+          <div class="col-lg-4">
+            <figure id='img3' class="rounded p-3 bg-white shadow-sm">
+              <!-- Image 4 Here -->
+            </figure>
+          </div>
+          <div class="col-lg-4">
+            <figure id='img4' class="rounded p-3 bg-white shadow-sm">
+              <!-- Image 5 Here -->
+            </figure>
+          </div>
+          <div class="col-lg-4">
+            <figure id='img5' class="rounded p-3 bg-white shadow-sm">
+              <!-- Image 6 Here -->
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>Images and information brought to you by <a href="https://apod.nasa.gov/apod/astropix.html" id="footer-link" target="blank">NASA's Astronomy Picture of the Day</a> API.</p>
+  </div>
+</body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="./static/js/config.js"></script>
+<script src="./static/js/index.js"></script>
+</html>
